@@ -61,6 +61,10 @@ body {
   margin-right: 60px;
 }
 
+.main img {
+  max-width: 400px;
+}
+
 h1 {
   font-size: 48px;
   font-weight: 900;
@@ -191,4 +195,43 @@ ul {
 .footer h4 {
   color: #fff;
   margin: auto;
+}
+
+@media (max-width: 768px) {
+  .main  {
+    flex-direction: column;
+    padding-top: 0px;
+    text-align: center;
+  }
+  
+  .main img {
+    margin-top: -260px;
+  }
+
+  .information .info {
+    display: block;
+    text-align: center;
+  }
+
+  .quote {
+    display: none;
+  }
+
+  .action  {
+    flex-direction: column;
+    text-align center: 
+    margin-top: -100px
+  }
+  
+  .action-text h3 {
+    text-align: center;
+    margin: 0 20px;
+  }
+  
+  .action-text p {
+    text-align: center;
+    margin: 0 20px;
+    padding: 20px;
+  }
+  
 }
